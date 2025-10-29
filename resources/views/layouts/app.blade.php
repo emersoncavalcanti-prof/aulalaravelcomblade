@@ -30,6 +30,8 @@
         <li class="nav-item">
             <a class="nav-link" href="/clientes">Meu cadastro</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
     
       </ul>
       <form class="d-flex" role="search">
