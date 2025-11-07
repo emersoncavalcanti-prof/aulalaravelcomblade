@@ -29,10 +29,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/clientes">Meu cadastro</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/login">Login</a>
-    
+        </li>    
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search"/>

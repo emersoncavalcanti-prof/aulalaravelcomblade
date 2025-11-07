@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/login', function () {
+Route::get('/admin', function () {
     return view('login');
 })->name('login');
