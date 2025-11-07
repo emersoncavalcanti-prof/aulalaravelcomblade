@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('login');
 })->name('login');
+
+Route::get('/painel', function () {
+    return view('layouts.admin');
+})->name('painel');
