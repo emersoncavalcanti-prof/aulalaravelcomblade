@@ -50,7 +50,7 @@
 
     <!-- Conteúdo principal -->
     <div class="content">
-      <h4>Bem-vindo {{Auth::user()->name}}, hoje são {{ date('d/m/Y')}}</h4>
+      <h4> <i class="bi bi-speedometer2"></i> Bem-vindo {{Auth::user()->name}}, hoje são {{ date('d/m/Y')}}</h4>
       <p>Selecione uma opção no menu à esquerda.</p>
     </div>
 
