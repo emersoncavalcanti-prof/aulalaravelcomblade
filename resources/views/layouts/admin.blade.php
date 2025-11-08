@@ -41,7 +41,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link">
+          <a href="/logout" class="nav-link">
             <i class="bi bi-door-closed me-2"></i> Sair
           </a>
         </li>
@@ -50,7 +50,7 @@
 
     <!-- Conteúdo principal -->
     <div class="content">
-      <h1>Bem-vindo à Área Administrativa</h1>
+      <h4>Bem-vindo {{Auth::user()->name}}, hoje são {{ date('d/m/Y')}}</h4>
       <p>Selecione uma opção no menu à esquerda.</p>
     </div>
 

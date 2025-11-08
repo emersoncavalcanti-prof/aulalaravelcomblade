@@ -23,7 +23,7 @@ class Login extends Component
         ]);
 
         if ($authenticated) {
-            return redirect()->route('home');
+            return redirect()->route('painel');
         } else {
             session()->flash('error', 'Email ou senha inválido.');
         }
