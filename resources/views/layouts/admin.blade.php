@@ -22,7 +22,7 @@
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
           <a href="#" class="nav-link active">
-            <i class="bi bi-house me-2"></i> Home
+            <i class="bi bi-house me-2"></i> Dashboard
           </a>
         </li>
         <li>
@@ -45,8 +45,7 @@
 
     <!-- Conteúdo principal -->
     <div class="content">
-      <h4>Bem-vindo {{Auth::user()->name}}</h4>
-      <h6>Hoje são {{ date('d/m/Y')}}</h6>
+        @yield('conteudo')
     </div>
 
   </div>

@@ -15,7 +15,7 @@ Route::get('/admin', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/painel', function () {
-        return view('layouts.admin');
+        return view('admin.dashboard');
     })->name('painel');
 
     Route::get('/logout', function () {
