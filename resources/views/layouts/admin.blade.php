@@ -22,7 +22,7 @@
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
           <a href="#" class="nav-link active">
-            <i class="bi bi-speedometer2 me-2"></i> Dashboard
+            <i class="bi bi-house me-2"></i> Home
           </a>
         </li>
         <li>
@@ -36,11 +36,6 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link">
-            <i class="bi bi-gear me-2"></i> Configurações
-          </a>
-        </li>
-        <li>
           <a href="/logout" class="nav-link">
             <i class="bi bi-door-closed me-2"></i> Sair
           </a>
@@ -50,8 +45,8 @@
 
     <!-- Conteúdo principal -->
     <div class="content">
-      <h4> <i class="bi bi-speedometer2"></i> Bem-vindo {{Auth::user()->name}}, hoje são {{ date('d/m/Y')}}</h4>
-      <p>Selecione uma opção no menu à esquerda.</p>
+      <h4>Bem-vindo {{Auth::user()->name}}</h4>
+      <h6>Hoje são {{ date('d/m/Y')}}</h6>
     </div>
 
   </div>
