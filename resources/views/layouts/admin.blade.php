@@ -21,12 +21,12 @@
       <h4 class="text-white mb-4">Admin</h4>
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a href="#" class="nav-link active">
+          <a href="/painel" class="nav-link">
             <i class="bi bi-house me-2"></i> Dashboard
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link">
+          <a href="/usuarios" class="nav-link active">
             <i class="bi bi-people me-2"></i> Usuários
           </a>
         </li>
