@@ -21,22 +21,22 @@
       <h4 class="text-white mb-4">Admin</h4>
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a href="/painel" class="nav-link">
+          <a href="{{route('painel')}}" class="nav-link {{request()->routeIs('painel') ? 'active' : ''}}">
             <i class="bi bi-house me-2"></i> Dashboard
           </a>
         </li>
         <li>
-          <a href="/usuarios" class="nav-link active">
+          <a href="{{route('usuarios')}}" class="nav-link {{request()->routeIs('usuarios') ? 'active' : ''}}">
             <i class="bi bi-people me-2"></i> Usuários
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link">
+          <a href="{{route('produtos')}}" class="nav-link {{request()->routeIs('produtos') ? 'active' : ''}}">
             <i class="bi bi-box-seam me-2"></i> Produtos
           </a>
         </li>
         <li>
-          <a href="/logout" class="nav-link">
+          <a href="{{route('logout')}}" class="nav-link">
             <i class="bi bi-door-closed me-2"></i> Sair
           </a>
         </li>

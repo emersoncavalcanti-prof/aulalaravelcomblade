@@ -23,6 +23,10 @@ Route::middleware('auth')->group(function () {
         return view('admin.usuarios');
     })->name('usuarios');
 
+    Route::get('/produtos', function () {
+        return view('admin.produtos');
+    })->name('produtos');
+
     Route::get('/logout', function () {
         Auth::logout();
         return redirect()->route('login');
