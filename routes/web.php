@@ -23,6 +23,11 @@ Route::middleware('auth')->group(function () {
         return view('admin.usuarios');
     })->name('usuarios');
 
+
+    Route::get('/usuarios/novo', function () {
+        return view('admin.criar-usuario');
+    })->name('usuarios.novo');
+
     Route::get('/produtos', function () {
         return view('admin.produtos');
     })->name('produtos');
