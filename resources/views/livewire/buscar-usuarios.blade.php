@@ -2,12 +2,17 @@
    
     <input type="text" wire:model.live.debounce.500ms="search" placeholder="Buscar usuários..." class="form-control mb-3">
 
+    <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-success">Novo Cadastro</button>
+    </div>
+
     <table class="table table-striped">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Email</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -16,6 +21,10 @@
                     <td>{{ $user->id }}</td>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
+                    <td>
+                        <button class="btn btn-primary"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
