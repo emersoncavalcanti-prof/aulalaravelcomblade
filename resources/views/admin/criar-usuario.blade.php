@@ -1,4 +1,10 @@
 @extends('layouts.admin')
 @section('conteudo')
-  <h1>Cadastro de Usuário</h1>
+
+@if(Route::currentRouteName() == 'usuarios.novo')
+@livewire('criar-usuarios')
+@else
+@livewire('criar-usuarios', ['user' => $user])
+@endif
+
 @endsection
