@@ -22,8 +22,8 @@
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>
-                        <button class="btn btn-primary"><i class="bi bi-pencil"></i></button>
-                        <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                        <a href="{{route('usuarios.alterar', $user->id)}}" class="btn btn-primary"><i class="bi bi-pencil"></i></a>
+                        <a href="#" wire:click='apagar({{$user->id}})' class="btn btn-danger"><i class="bi bi-trash"></i></aa>
                     </td>
                 </tr>
             @endforeach
